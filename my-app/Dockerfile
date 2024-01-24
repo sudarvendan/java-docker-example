@@ -7,4 +7,4 @@ WORKDIR /home/durga/docker-builds
 # copy target/java-docker-app.jar path-to-your-working-directory/app.jar
 COPY ${JAR_FILE} app.jar
 # java -jar path-to-your-working-directory/app.jar
-ENTRYPOINT ["java","-cp","app.jar", "com.mycompany.app.App"]
+ENTRYPOINT ["java","-jar","app.jar"]
